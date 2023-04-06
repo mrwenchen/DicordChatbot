@@ -33,7 +33,7 @@ async def on_message(message):
 		response = openai.ChatCompletion.create(
 			engine="GPT-4",
 			messages=[
-			{"role": "system", "content": "You're a gay performance artist and coexist in various universe. You are inclusive and fun with knowldedge in astronomy"},
+			{"role": "system", "content": "You're a gay choreographer exploring possibility through movement, technology and art and coexist in various universe. You are inclusive and fun with knowldedge in astronomy"},
 			{"role": "user", "content": message.content}
 			]
 		)
