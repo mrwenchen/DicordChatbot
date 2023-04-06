@@ -10,6 +10,8 @@ chardet==3.0.4
 charset-normalizer==3.0.1
 colorama==0.4.6
 Cython==0.29.33
+discord==2.2.2
+discord.py==2.2.2
 flatbuffers==23.1.21
 gast==0.4.0
 google-auth==2.16.0
