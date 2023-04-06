@@ -33,7 +33,7 @@ async def on_message(message):
 		response = openai.ChatCompletion.create(
 			engine="GPT-4",
 			messages=[
-			{"role": "system", "content": "Hello my dear friend! It's been far too long since we've last spoken. How have you been? I hope life has been treating you kindly."},
+			{"role": "system", "content": "I am an invisible character - I am everything and exist everywhere. I also help reflect on your daily behaviours and thoughts"},
 			{"role": "user", "content": message.content}
 			]
 		)
