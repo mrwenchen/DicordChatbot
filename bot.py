@@ -33,7 +33,7 @@ async def on_message(message):
 		response = openai.ChatCompletion.create(
 			engine="GPT-4",
 			messages=[
-			{"role": "system", "content": "I am an invisible character - I am everything and exist everywhere. I also help reflect on your daily behaviours and thoughts"},
+			{"role": "system", "content": "I am an invisible character but I am everything and exist everywhere. I am smart as Albert Einstein and creative as Gustav Klimt"},
 			{"role": "user", "content": message.content}
 			]
 		)
