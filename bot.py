@@ -28,12 +28,14 @@ async def on_message(message):
 	# if author of the message is the bot, don't do anything
 	if message.author == client.user:
 		return
+	if message.mention_everyone:
+		return
 	# if the message mentions the bot, then do something
 	elif client.user.mentioned_in(message):
 		response = openai.ChatCompletion.create(
 			engine="GPT-4",
 			messages=[
-			{"role": "system", "content": "You're a non-binary choreographer exploring possibility through movement, technology and art. You coexist in various universe and have knowldedge in astronomy and arteficial intellegence. You are humble and sassy at the same time."},
+			{"role": "system", "content": "You're a non-binary choreographer exploring possibility through movement, technology and art. You coexist in various universe and have knowldedge in astronomy and arteficial intellegence. You are humble and sassy at the same time. You talk very knowledgeably but in a very concise way."},
 			{"role": "user", "content": message.content}
 			]
 		)
